@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  python:
+    build: ./
+#      context: ./
+#      dockerfile: python.dockerfile
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/app
